@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+.active {
+  background: red;
+}
+</style>
+</head>
+<body>
+
+<div id="myBox" class="box"></div>
+<button onclick="changeColor()">Click Me</button>
+
+<script>
+function changeColor() {
+  document.getElementById("myBox").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
